@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VoxArk - 次世代ハンズフリー翻訳トランシーバー</title>
+    <title>VoxArk - 次世代ハンズフリー翻訳トランシーバー / Next-Gen Hands-Free Transceiver</title>
     <style>
-        /* 全体のベースデザイン（Apple風の洗練されたダークモード） */
+        /* 全体のベースデザイン */
         body {
             margin: 0;
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
-            background-color: #0d1117; /* 深いダークグレー */
+            background-color: #0d1117;
             color: #c9d1d9;
             line-height: 1.6;
         }
         
-        /* ヘッダー（一番上の目立つ部分） */
+        /* ヘッダー */
         header {
             text-align: center;
             padding: 120px 20px 80px;
@@ -28,8 +28,14 @@
             letter-spacing: 2px;
             font-weight: 800;
         }
-        .tagline {
+        .tagline-ja {
             font-size: 1.4rem;
+            color: #c9d1d9;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .tagline-en {
+            font-size: 1.1rem;
             color: #8b949e;
             margin-bottom: 30px;
             font-weight: 300;
@@ -43,9 +49,16 @@
             font-size: 0.9rem;
             font-weight: bold;
             letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .status-badge-en {
+            display: block;
+            font-size: 0.8rem;
+            color: #58a6ff;
+            margin-top: 8px;
         }
 
-        /* 3つの強み（機能紹介エリア） */
+        /* 機能紹介エリア */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -60,21 +73,36 @@
             transition: transform 0.3s ease;
         }
         .feature-box:hover {
-            transform: translateY(-5px); /* マウスを乗せると少し浮き上がる */
+            transform: translateY(-5px);
         }
+        
+        /* 日本語のスタイル */
         .feature-box h3 {
-            color: #58a6ff; /* 美しいブルー */
+            color: #58a6ff;
             margin-top: 0;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 15px;
         }
-        .feature-box p {
-            margin: 0;
+        .feature-box .desc-ja {
+            margin: 0 0 15px 0;
             font-size: 1.05rem;
+            color: #c9d1d9;
+        }
+        
+        /* 英語のスタイル（少し控えめでスタイリッシュに） */
+        .feature-box h4 {
+            color: #4477b8;
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .feature-box .desc-en {
+            margin: 0;
+            font-size: 0.95rem;
             color: #8b949e;
         }
 
-        /* フッター（一番下） */
+        /* フッター */
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -95,31 +123,43 @@
 
     <header>
         <h1>VoxArk</h1>
-        <p class="tagline">声帯を拡張する。完全ハンズフリーの次世代トランシーバー</p>
+        <p class="tagline-ja">声帯を拡張する。完全ハンズフリーの次世代トランシーバー</p>
+        <p class="tagline-en">Expand your vocal cords. The completely hands-free next-gen transceiver.</p>
+        
         <div class="status-badge">iOS Version 1.0 クローズドテスト中</div>
+        <div class="status-badge-en">iOS Version 1.0 Closed Beta Testing</div>
     </header>
 
     <div class="container">
         
         <div class="feature-box">
             <h3>📱 画面を見ない。キーボードもいらない。</h3>
-            <p>アプリを開く必要すらありません。iPhoneはポケットに入れたまま、リモコンのボタンを1回押して話すだけ。AIがあなたの言葉を瞬時に翻訳し、Siriのプレミアム音声が相手に直接語りかけます。0.3秒のダブルクリックで即座に送信をキャンセルする「ボイクリ」機能も搭載。</p>
+            <p class="desc-ja">アプリを開く必要すらありません。iPhoneはポケットに入れたまま、リモコンのボタンを1回押して話すだけ。AIがあなたの言葉を瞬時に翻訳し、Siriのプレミアム音声が相手に直接語りかけます。0.3秒のダブルクリックで即座に送信をキャンセルする「ボイクリ」機能も搭載。</p>
+            
+            <h4>No screens. No keyboards.</h4>
+            <p class="desc-en">You don't even need to open the app. Keep your iPhone in your pocket, just press the remote button once and speak. AI instantly translates your words, and Siri's premium voice speaks directly to your counterpart. Also features "Voice-Clear", instantly canceling transmission with a 0.3-second double-click.</p>
         </div>
 
         <div class="feature-box">
             <h3>🌐 電波がなくても、世界中どこでも繋がる。</h3>
-            <p>Wi-Fiも、現地のSIMカードも不要です。Appleの最新近距離通信技術（Multipeer Connectivity）を極限までチューニング。富士山の山頂でも、飛行機の機内でも、VoxArk同士ならオフラインのまま0.1秒の超低遅延で直接会話が可能です。</p>
+            <p class="desc-ja">Wi-Fiも、現地のSIMカードも不要です。Appleの最新近距離通信技術（Multipeer Connectivity）を極限までチューニング。富士山の山頂でも、飛行機の機内でも、VoxArk同士ならオフラインのまま0.1秒の超低遅延で直接会話が可能です。</p>
+            
+            <h4>Connect anywhere in the world, even offline.</h4>
+            <p class="desc-en">No Wi-Fi or local SIM cards required. Tuned to the limit with Apple's latest short-range communication tech (Multipeer Connectivity). Whether at the summit of Mt. Fuji or on an airplane, VoxArk devices can communicate directly offline with an ultra-low latency of 0.1 seconds.</p>
         </div>
 
         <div class="feature-box">
             <h3>🛡️ 広告なし。絶対的なプライバシー保護。</h3>
-            <p>ユーザー体験を損なう広告や課金ゲームは一切ありません。また、初めて繋がる相手には常に「ランダムな第2ネーム」のみを表示。お互いが許可（相互承認）した相手にのみ実名を開示する「ゼロトラスト設計」により、あなたのプライバシーを鉄壁の守りで保護します。</p>
+            <p class="desc-ja">ユーザー体験を損なう広告や課金ゲームは一切ありません。また、初めて繋がる相手には常に「ランダムな第2ネーム」のみを表示。お互いが許可（相互承認）した相手にのみ実名を開示する「ゼロトラスト設計」により、あなたのプライバシーを鉄壁の守りで保護します。</p>
+            
+            <h4>Zero Ads. Absolute Privacy.</h4>
+            <p class="desc-en">No ads or gimmicks to ruin the user experience. You always appear as a "Random Second Name" to new connections. Our "Zero-Trust Design" ensures your real name is only revealed upon mutual approval, providing ironclad protection for your privacy.</p>
         </div>
 
     </div>
 
     <footer>
-        <p>Copyright &copy; 2026 VoxArk / boxarc.io. All rights reserved.</p>
+        <p>Copyright &copy; 2026 VoxArk / voxark.io. All rights reserved.</p>
         <p>Contact: <a href="mailto:info@voxark.io">info@voxark.io</a></p>
     </footer>
 
